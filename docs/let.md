@@ -85,7 +85,7 @@ console.log(foo); // 输出undefined
 var foo = 2;
 
 // let 的情况
-console.log(bar); // 报错ReferenceError
+console.log(bar); // 报错ReferenceError  注：实际上还是输出undefined
 let bar = 2;
 ```
 
@@ -129,7 +129,7 @@ if (true) {
 “暂时性死区”也意味着`typeof`不再是一个百分之百安全的操作。
 
 ```javascript
-typeof x; // ReferenceError
+typeof x; // ReferenceError    注：实际上并不会抛出异常，输出typeof x 值为undefined
 let x;
 ```
 
